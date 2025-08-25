@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rotaract Club Membership Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <h1>Rotaract Club of KPRIET Membership Form</h1>
+    <form id="rotaractForm">
+      
+      <!-- Full Name -->
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" name="fullname" placeholder="Enter your full name">
+      <div class="error" id="nameError"></div>
+      
+      <!-- Email -->
+      <label for="email">Email (Kpriet mail or personal)</label>
+      <input type="email" id="email" name="email" placeholder="example@kpriet.ac.in or example@gmail.com">
+      <div class="error" id="emailError"></div>
+      
+      <!-- Phone -->
+      <label for="phone">Phone Number</label>
+      <input type="text" id="phone" name="phone" placeholder="+91-9876543210 or 9876543210">
+      <div class="error" id="phoneError"></div>
+      
+      <!-- ZIP -->
+      <label for="zip">ZIP Code</label>
+      <input type="text" id="zip" name="zip" placeholder="6 digit PIN code">
+      <div class="error" id="zipError"></div>
+      
+      <!-- DOB -->
+      <label for="dob">Date of Birth</label>
+      <input type="date" id="dob" name="dob">
+      <div class="error" id="dobError"></div>
+      
+      <!-- Password -->
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Must contain A-z, 0-9, @">
+      <div class="error" id="passwordError"></div>
+      
+      <!-- Confirm Password -->
+      <label for="confirmPassword">Confirm Password</label>
+      <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Re-enter password">
+      <div class="error" id="confirmError"></div>
+      
+      <!-- Gender -->
+      <label>Gender</label>
+      <div class="radio-group">
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female
+        <input type="radio" name="gender" value="Other"> Other
+      </div>
+      <div class="error" id="genderError"></div>
+      
+      <!-- Department -->
+      <label for="dept">Department</label>
+      <select id="dept">
+        <option value="">Select Department</option>
+        <option value="AI&DS">AI & DS</option>
+        <option value="CSE">CSE</option>
+        <option value="ECE">ECE</option>
+        <option value="MECH">MECH</option>
+      </select>
+      <div class="error" id="deptError"></div>
+      
+      <!-- Year -->
+      <label for="year">Year of Study</label>
+      <select id="year">
+        <option value="">Select Year</option>
+        <option value="1">1st Year</option>
+        <option value="2">2nd Year</option>
+        <option value="3">3rd Year</option>
+        <option value="4">Final Year</option>
+      </select>
+      <div class="error" id="yearError"></div>
+      
+      <!-- Interested Domains -->
+      <label>Interested Domains</label>
+      <div class="checkbox-group">
+        <input type="checkbox" name="domain" value="Leadership"> Leadership
+        <input type="checkbox" name="domain" value="PR"> Public Relation
+        <input type="checkbox" name="domain" value="Technical"> Technical
+        <input type="checkbox" name="domain" value="Community Service"> Community Service
+      </div>
+      <div class="error" id="domainError"></div>
+      
+      <!-- Terms -->
+      <div class="terms">
+        <input type="checkbox" id="terms">
+        <label for="terms">I agree to the terms and conditions</label>
+      </div>
+      <div class="error" id="termsError"></div>
+      
+      <!-- Submit Button -->
+      <button type="submit">Join Now</button>
+      <div class="success" id="successMsg"></div>
+    </form>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
